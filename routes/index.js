@@ -29,6 +29,7 @@ router.use(
   })
 );
 
+/* GET profile page */
 router.get('/profile', (req, res) => {
   res.render("profile")
 })
