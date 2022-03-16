@@ -7,6 +7,7 @@ const User = require("../models/User.model");
 const session = require("express-session");
 const MongoStore = require("connect-mongo"); //stay login while refreshing
 const mongoose = require("mongoose");
+const { route } = require("express/lib/application");
 
 //MIDDLEWARE CONFIG
 router.use(
@@ -27,6 +28,10 @@ router.use(
     }),
   })
 );
+
+router.get('/profile', (req, res) => {
+  res.render("profile")
+})
 
 const requireLogin = (req, res, next) => {
   if (!req.session.currentSession) {
