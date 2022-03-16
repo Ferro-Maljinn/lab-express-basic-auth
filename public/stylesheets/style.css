@@ -4,7 +4,7 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }
 
 .btn {
@@ -14,7 +14,7 @@ a {
   font-weight: bold;
   background-color: blueviolet;
   padding: 16px;
+  position: absolute;
   margin: 16px;
   border-radius: 12px;
-
-} 
+}
